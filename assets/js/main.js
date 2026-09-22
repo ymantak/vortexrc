@@ -862,6 +862,7 @@
     const STORAGE_KEY = "theme-mode";
     const $body = $("body");
     const $buttons = $(".js-mode-type button");
+    const DEFAULT_MODE = "light";
 
     function saveTheme(mode) {
       try {
@@ -899,6 +900,6 @@
       setTheme($(this).data("mode"));
     });
 
-    setTheme(getSavedTheme() || "dark");
+    setTheme(getSavedTheme() || DEFAULT_MODE);
   }
 })(jQuery);

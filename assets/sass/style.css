@@ -2950,6 +2950,9 @@ body.light-mode .ak-sticky_header.ak-gescout_show {
   color: var(--footer-color);
 }
 
+.footer.style-1 .footer-logo img {
+  max-height: 120px;
+}
 .footer.style-1 .footer-email {
   position: relative;
 }

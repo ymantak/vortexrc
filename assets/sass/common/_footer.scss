@@ -9,6 +9,11 @@
   color: var(--footer-color);
 }
 .footer.style-1 {
+  .footer-logo {
+    img {
+      max-height: 120px;
+    }
+  }
   .footer-email {
     position: relative;
     .background-text {
