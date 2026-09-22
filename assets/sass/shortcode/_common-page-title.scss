@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+  11. Common Page Title
+----------------------------------------------------------------*/
+
+.common-page-title {
+  margin-bottom: 30px;
+  &.common-page-bg-img {
+    .page-title {
+      text-transform: uppercase;
+      color: $white;
+    }
+    p,
+    a {
+      color: $white;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .page-title {
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  p,
+  a {
+    color: var(--white-color);
+    &:hover {
+      color: $primary;
+    }
+  }
+}
