@@ -80,7 +80,7 @@
   function mainNav() {
     $(".ak-nav").append('<span class="ak-munu_toggle"><span></span></span>');
     $(".menu-item-has-children").append(
-      '<span class="ak-munu_dropdown_toggle"></span>'
+      '<span class="ak-munu_dropdown_toggle"></span>',
     );
     $(".ak-munu_toggle").on("click", function () {
       $(this)
@@ -94,7 +94,7 @@
     });
 
     $(".menu-item-has-black-section").append(
-      '<span class="ak-munu_dropdown_toggle_1"></span>'
+      '<span class="ak-munu_dropdown_toggle_1"></span>',
     );
 
     $(".ak-munu_dropdown_toggle_1").on("click", function () {
@@ -318,7 +318,7 @@
       video = video.split("?v=")[1].trim();
       $(".ak-video-popup-container iframe").attr(
         "src",
-        `https://www.youtube.com/embed/${video}`
+        `https://www.youtube.com/embed/${video}`,
       );
       $(".ak-video-popup").addClass("active");
     });
@@ -340,7 +340,7 @@
         {
           scrollTop: 0,
         },
-        0
+        0,
       );
     });
   }
@@ -548,17 +548,17 @@
           return 0;
         } else {
           const months = Math.floor(
-            timeRemaining / (1000 * 60 * 60 * 24 * 30.44)
+            timeRemaining / (1000 * 60 * 60 * 24 * 30.44),
           );
           const days = Math.floor(
             (timeRemaining % (1000 * 60 * 60 * 24 * 30.44)) /
-            (1000 * 60 * 60 * 24)
+              (1000 * 60 * 60 * 24),
           );
           const hours = Math.floor(
-            (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
           );
           const minutes = Math.floor(
-            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
           );
           const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
@@ -619,7 +619,7 @@
               complete: function () {
                 $this.text(Math.ceil(this.countNum).toLocaleString("en"));
               },
-            }
+            },
           );
         });
         a = 1;
@@ -644,7 +644,7 @@
         $("#ak-alert")
           .fadeIn()
           .html(
-            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>'
+            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>',
           );
         return false;
       }
@@ -678,7 +678,7 @@
             $("#ak-alert")
               .fadeIn()
               .html(
-                '<div class="alert rounded-0 alert-success"><strong>Success!</strong> Email has been sent successfully.</div>'
+                '<div class="alert rounded-0 alert-success"><strong>Success!</strong> Email has been sent successfully.</div>',
               );
             setTimeout(function () {
               $("#ak-alert").fadeOut("slow");
@@ -689,8 +689,8 @@
               .fadeIn()
               .html(
                 '<div class="alert rounded-0 alert-danger"><strong>Email not send!</strong> ' +
-                error +
-                "</div>"
+                  error +
+                  "</div>",
               );
           },
         });
@@ -698,7 +698,7 @@
         $("#ak-alert")
           .fadeIn()
           .html(
-            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> All fields are required.</div>'
+            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> All fields are required.</div>',
           );
       }
       return false;
@@ -726,7 +726,7 @@
         $("#ak-alert")
           .fadeIn()
           .html(
-            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>'
+            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>',
           );
         return false;
       }
@@ -766,7 +766,7 @@
             $("#ak-alert")
               .fadeIn()
               .html(
-                '<div class="alert rounded-0 alert-success"><strong>Success!</strong> Email has been sent successfully.</div>'
+                '<div class="alert rounded-0 alert-success"><strong>Success!</strong> Email has been sent successfully.</div>',
               );
             setTimeout(function () {
               $("#ak-alert").fadeOut("slow");
@@ -777,8 +777,8 @@
               .fadeIn()
               .html(
                 '<div class="alert rounded-0 alert-danger"><strong>Email not send!</strong> ' +
-                error +
-                "</div>"
+                  error +
+                  "</div>",
               );
           },
         });
@@ -786,7 +786,7 @@
         $("#ak-alert")
           .fadeIn()
           .html(
-            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> All fields are required.</div>'
+            '<div class="alert rounded-0 alert-danger"><strong>Warning!</strong> All fields are required.</div>',
           );
       }
       return false;
@@ -808,7 +808,7 @@
         $("#ak-alert-footer")
           .fadeIn()
           .html(
-            '<p class="text-danger"><strong>Warning!</strong> Please Enter Valid Email.</p>'
+            '<p class="text-danger"><strong>Warning!</strong> Please Enter Valid Email.</p>',
           );
         return false;
       }
@@ -828,7 +828,7 @@
             $("#ak-alert-footer")
               .fadeIn()
               .html(
-                '<p class="text-success"><strong>Success!</strong> Sent successfully.</p>'
+                '<p class="text-success"><strong>Success!</strong> Sent successfully.</p>',
               );
             setTimeout(function () {
               $("#ak-alert-footer").fadeOut("slow");
@@ -838,7 +838,7 @@
             $("#ak-alert-footer")
               .fadeIn()
               .html(
-                '<p class="text-danger"><strong>Email not send!</strong> </p>'
+                '<p class="text-danger"><strong>Email not send!</strong> </p>',
               );
           },
         });
@@ -846,7 +846,7 @@
         $("#ak-alert-footer")
           .fadeIn()
           .html(
-            '<p class="text-danger"><strong>Warning!</strong> All fields are required.</p>'
+            '<p class="text-danger"><strong>Warning!</strong> All fields are required.</p>',
           );
       }
       return false;
